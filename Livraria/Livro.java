@@ -1,3 +1,6 @@
+package livraria;
+import java.util.Scanner;
+
 public class Livro {
     int id;
     String titulo;
@@ -5,13 +8,13 @@ public class Livro {
     String editora;
     int qtdPaginas;
 
-    Livro(int id, String titulo, String ano, String editora, int qtdPag{
+    Livro(int id, String titulo, String ano, String editora, int qtdPag){
         this.id = id;
         this.titulo = titulo;
         this.anoDePublicacao = ano;
         this.editora = editora;
         this.qtdPaginas = qtdPag;
-    })
+    }
 }
 
 String detalhar(){
