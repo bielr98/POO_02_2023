@@ -1,29 +1,22 @@
 package livraria;
-import java.util.Scanner;
 
 public class Livro {
     int id;
+    String autor;
     String titulo;
     String anoDePublicacao;
-    String editora;
-    int qtdPaginas;
 
-    Livro(int id, String titulo, String ano, String editora, int qtdPag){
+    Livro (int id, String autor, String titulo, String anoDePublicacao){
         this.id = id;
+        this.autor = autor;
         this.titulo = titulo;
-        this.anoDePublicacao = ano;
-        this.editora = editora;
-        this.qtdPaginas = qtdPag;
+        this.anoDePublicacao = anoDePublicacao;
     }
-}
 
-String detalhar(){
-    String detalhe = "";
-    detalhe += "\nID: " + this.id;
-    detalhe += "\nTitulo: " + this.titulo;
-    detalhe += "\nAno de Publicacao: " + this.anoDePublicacao;
-    detalhe += "\nEditora: " + this.editora;
-    detalhe += "\nQtd Paginas: " + this.qtdPaginas;
+    String imprimir(){
+        String ret = "";
+        ret = this.id + " - " + this.titulo + " - " + this.autor + " - " + this.anoDePublicacao;
+        return ret;
+    }
 
-    return detalhe;
 }
